@@ -1,7 +1,7 @@
 :root{
 	background:black;
 	color: white;
-	grid-template:1fr 50px/20% 1fr
+	/*grid-template:1fr 50px/20% 1fr*/
 }
 
 #n1, #n2{
@@ -89,5 +89,13 @@ header::after{
 }
 
 section{
-	display: inline-block;
+	display: block;
 }
+
+a{
+	color: orangered;
+	font-size: 25px;
+}
+
+/*
+ */
