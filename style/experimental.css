@@ -1,0 +1,93 @@
+:root{
+	background:black;
+	color: white;
+	grid-template:1fr 50px/20% 1fr
+}
+
+#n1, #n2{
+	display: block;
+}
+
+.box-div{
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	text-align: center;
+}
+
+#div1{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	background-color: blue;
+}
+
+.box-div2{
+	background-color: greenyellow;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	color: lightcoral;
+}
+
+#div2{
+	position: absolute;
+	inset: 20px;
+}
+
+.sticky-head {
+	background-color: black;
+	color: white;
+	padding: 10px;
+	position: sticky;
+	top: 0;
+	left: 0;
+	margin: 1em 0;
+}
+
+.scr{
+	width:500px;
+	height: 300px;
+	overflow: scroll;
+	margin-left: 150px;
+}
+
+.box-div3{
+	width: 100px;
+	height: 100px;
+	background-color: purple;
+	color: white
+}
+
+#scr2{
+	position: fixed;
+	top: 80px;
+	left: 10px;
+	text-align: center;
+}
+
+body{
+	height: 1200px
+}
+
+header{
+	position: relative;
+	height: 100px;
+	background: url("https://klike.net/uploads/posts/2022-12/1670826979_3-57.jpg") no-repeat center;
+	z-index: 0;
+	text-align: center;
+}
+
+header::after{
+	position: absolute;
+	background-color: lightcoral;
+	z-index: -1;
+	content: " ";
+	inset: 0;
+	opacity: 50%;
+}
+
+section{
+	display: inline-block;
+}
